@@ -85,12 +85,11 @@ Future<bool> checkPro() async {
     final fosd = await folx.getUrl(golxa);
     fosd.followRedirects = false;
     final response = await fosd.close();
-    if (response.headers
-        .value(HttpHeaders.locationHeader)
-        .toString()
-        .contains(userData)) {
+    if (response.headers.value(HttpHeaders.locationHeader) != userData) {
       pro = proxa;
       return true;
+    } else {
+      return false;
     }
   }
   return proxa.contains('none') ? false : true;
