@@ -1,0 +1,1 @@
+ /Users/kilxsx/Downloads/financetinkoffui-main/.dart_tool/flutter_build/c914627fcc916d7cac1c81ea0f783d44/native_assets.yaml: 
