@@ -32,7 +32,7 @@ class _MainScreenState extends State<MainScreen> {
         bottom: false,
         child: InAppWebView(
           initialUrlRequest: URLRequest(
-            url: Uri.parse(xx),
+            url: WebUri(xx),
           ),
         ),
       ),
